@@ -14,7 +14,7 @@ router.get('/about', (req, res) => {
 });
 
 // shop route
-router.get('/about', (res, req) => {
+router.get('/shop', (req, res) => {
     res.send('Shop for routers');
 });
 
