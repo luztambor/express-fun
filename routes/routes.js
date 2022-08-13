@@ -3,20 +3,17 @@ import express from "express";
 // initialize Express router
 const router = express.Router();
 
+// import page controller
+import {Home, About, Shop} from "../controllers/pages.js"
+
 // home route
-router.get('/', (req, res) => {
-    res.send('Home using router');
-});
+router.get('/', Home)
 
 // about route
-router.get('/about', (req, res) => {
-    res.send('About using router');
-});
+router.get('/about', About)
 
 // shop route
-router.get('/shop', (req, res) => {
-    res.send('Shop for routers');
-});
+router.get('/shop', Shop)
 
 // export the default router
 export default router;
